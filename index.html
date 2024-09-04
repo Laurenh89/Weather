@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App project 7</title>
   </head>
@@ -14,6 +14,7 @@
             type="search"
             placeholder="Enter a city..."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -22,7 +23,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">London</h1>
+            <h1 class="weather-app-city" id="city">London</h1>
             <p class="weather-app-details">
               Tuesday 15:46, broken clouds
               <br />

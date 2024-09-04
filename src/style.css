@@ -82,7 +82,6 @@ main {
 .weather-app-unit {
   margin-top: 15px;
   font-size: 28px;
-  font-family: "Roboto", sans-serif;
 }
 a {
   color: #885df1;
@@ -94,4 +93,8 @@ footer {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
   display: block;
+}
+
+@-ms-viewport {
+  width: device-width;
 }
