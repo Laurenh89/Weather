@@ -4,27 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <title>Weather App project 7</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>London</h1>
-          <p>
-            Tuesday 15:46, broken clouds
-            <br />
-            Humidity: 64%, Wind: 5.14km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">London</h1>
+            <p class="weather-app-details">
+              Tuesday 15:46, broken clouds
+              <br />
+              Humidity: <strong>64%</strong>, Wind: <strong>5.14km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">℃</div>
+          </div>
         </div>
-        <div>⛅ 12℃</div>
       </main>
+
       <footer>
         This project was coded by
         <a href="https://github.com/Laurenh89" target="_blank">
@@ -43,5 +55,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
